@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>  
+</head>  
+<body>  
+  
+<h3>Books Information</h3>  
+<table border=5>  
+    <thead>  
+        <td>Title</td>
+        <td>Price</td>
+        <td>Author</td>
+    </thead>
+      
+    {% if book%}
+      
+        <tr>  
+            <td>{{book.title}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.author}}</td>
+        </tr>  
+      
+    {% endif %}
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html>  
